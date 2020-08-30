@@ -48,11 +48,16 @@ const Home = () => {
           audio: true,
         })
         .then((stream) => {
+          const screenWidth = document.getElementById("comment-screen")
+            .clientWidth;
+          const screenHeight = document.getElementById("comment-screen")
+            .clientHeight;
+          console.log(screenWidth, screenHeight);
           localVideo.current.srcObject = stream;
           const nico = new nicoJSLib({
             app: document.getElementById("comment-screen"),
-            width: 500,
-            height: 300,
+            width: screenWidth,
+            height: screenHeight,
             font_size: 36,
             speed: 8,
             color: "#FFF",
@@ -83,8 +88,7 @@ const Home = () => {
           <div id="comment-screen">
             <video
               id="video"
-              width="500px"
-              height="300px"
+              width="100%"
               autoPlay
               muted
               ref={localVideo}
