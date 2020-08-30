@@ -1,0 +1,24 @@
+{
+  "name": "nicoPlayer",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/Prog24/nicoPlayer",
+  "author": "Prog24 <kenta@suzuki.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "parcel": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "prettier": "^2.1.1"
+  },
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html"
+  }
+}
